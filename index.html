@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Simples</title>
+    <title>NEAD | Solicitações</title>
+    
+    <!-- Favicon (ícone na aba do navegador) -->
+    <link rel="icon" href="icone-afya.png" type="image/x-icon">
+    
+    <!-- Links para Google Fonts e ícones -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;display=swap&amp;subset=latin-ext">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,11 +24,18 @@
             background-repeat: no-repeat; 
             background-attachment: fixed; 
             background-position: center; 
-            color: #f4f4f4; /* Cor do texto para contraste */
+            color: #000000; /* Cor do texto para contraste */
         }
-        h1 {
-            color: #ffd700; /* Cor do título (dourado) */
+
+        h1, h2 {
+            color: #000000; /* Cor do título */
+            margin-bottom: 30px;
         }
+
+        p {
+            margin-bottom: 40px; /* Adicionando um espaço abaixo do parágrafo */
+        }
+
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -28,15 +44,202 @@
             background-color: #007BFF;
             color: white;
             border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px; /* Espaço entre o texto e o ícone */
+            margin-bottom: 30px;
         }
+
         button:hover {
             background-color: #0056b3;
         }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+
+        /* Estilos para as 3 colunas */
+        .coluna {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .coluna h3 {
+            color: #007BFF;
+        }
+
+        .coluna ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .coluna ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para a divisão em 2 partes */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .informacoes {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .txtRosaAfya {
+            color: #E81C6F;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .botao a {
+            display: block;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .botao a:hover {
+            background-color: #0056b3;
+        }
+        
     </style>
 </head>
+
 <body>
-    <h1>Bem-vindo ao Meu Site!</h1>
-    <p>Este é um site simples hospedado no GitHub Pages.</p>
-    <button onclick="alert('Você clicou no botão!')">Clique aqui</button>
-</body>
-</html>
+    <!-- Conteúdo Topo -->
+    <section class="conteudoTopo">
+        <h2 class="nomeTopo" id="nomeTopo">Bem-vindo ao Canal de Solicitações</h2>
+    </section>
+    <h1>NEAD | Núcleo de Educação à Distância</h1>
+    <p>Prezado Acadêmico, atenção ao tipo de solicitação que deseja realizar. Clique no botão desejado para realizar sua solicitação.</p>
+    <p></p>
+    <p></p>
+
+    <!-- Primeira Parte: Divisão em 3 colunas -->
+    <div class="container">
+        <div class="coluna">
+            <button>Conteúdo</button>
+            <ul>
+                <li><b>REVISÃO DE CONTEÚDO</b></li>
+                <li>Cursos EAD e Semi</li>
+                <li>Cursos Presenciais - ON.A/ON.S/HB-S/HB</li>
+            </ul>
+        </div>
+        <div class="coluna">
+            <button>Docente</button>
+            <ul>
+                <li>Correção de Roteiro de Atividade</li>
+                <li>Reabertura de Prazo de Atividade ON.A/ON.S/HB-S - Cursos Presenciais</li>
+                <li>Recorreção/Anulação de Questão de Simulado/Avaliação/Exame ON.A-ON.S-HB-S - Cursos Presenciais</li>
+            </ul>
+        </div>
+        <div class="coluna">
+            <button>Sistemas</button>
+            <ul>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeF2w2wUNwHYQoWzA5K29nkVNqs1hUkEsdxrFLlK0ryzEBTxg/viewform" target="_blank">Clique aqui</a> para solicitação de geração da Prova (2° Chamada)</li>
+                <li>Revisão de Questão</li>
+                <li>Recorreção/Anulação de Questão de Simulado/Avaliação/Exame Final</li>
+                <li>Reabertura de Prazo de Atividade</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Segunda Parte: Formulários e Links -->
+<section class="informacoes">
+    <h3 class="txtRosaAfya">Dúvidas Frequentes:</h3>
+    <div class="div" id="escolhaDiv">
+        <!-- Toggle para "Conteúdo" -->
+        <div class="botao" id="botao">
+            <span class="linkTexto" onclick="toggleConteudo('conteudoToggle')">Conteúdo</span>
+            <div id="conteudoToggle" class="conteudoOculto" style="text-align: left; padding-left: 15px;">
+                <ul>
+                    <li><b>REVISÃO DE CONTEÚDO</b></li>
+                    <li>Cursos EAD e Semi</li>
+                    <li>Cursos Presenciais - ON.A/ON.S/HB-S/HB</li>
+                    <!-- <li><a href="https://forms.office.com/pages/responsepage.aspx?id=6Oy8YGvrTkmmB-g_zc7zM2_ciw5EOc5KtC1xVaiXx5VUNEpWV0xUMUc3MjRJVzZZVDVWS1ZSRUE4Ri4u&amp;origin=lprLink+Please+fill+out+this+form+A+post+on+Microsoft+Forms+provided+by%3a+forms.office.com" target="_blank">Clique aqui para acessar o formulário</a></li>-->
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Toggle para "Docente" -->
+        <div class="botao" id="botao">
+            <span class="linkTexto" onclick="toggleConteudo('docenteToggle')">Docente</span>
+            <div id="docenteToggle" class="conteudoOculto">
+                <ul>
+                    <li>Correção de Roteiro de Atividade</li>
+                    <li>Reabertura de Prazo de Atividade ON.A/ON.S/HB-S - Cursos Presenciais</li>
+                    <li>Recorreção/Anulação de Questão de Simulado/Avaliação/Exame ON.A-ON.S-HB-S - Cursos Presenciais</li>
+                    <!-- <li><a href="https://forms.office.com/pages/responsepage.aspx?id=6Oy8YGvrTkmmB-g_zc7zM2_ciw5EOc5KtC1xVaiXx5VURjU5NlZYSkZLWkdEMENORVUyWDIxUFYxSi4u&amp;origin=lprLink+Please+fill+out+this+form+A+post+on+Microsoft+Forms+provided+by%3a+forms.office.com" target="_blank">Clique aqui para acessar o formulário</a></li>-->
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Toggle para "Sistemas" -->
+        <div class="botao" id="botao">
+            <span class="linkTexto" onclick="toggleConteudo('sistemasToggle')">Sistemas</span>
+            <div id="sistemasToggle" class="conteudoOculto">
+                <ul>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeF2w2wUNwHYQoWzA5K29nkVNqs1hUkEsdxrFLlK0ryzEBTxg/viewform" target="_blank">Clique aqui</a> para solicitação de geração da Prova (2° Chamada)</li>
+                    <li>Revisão de Questão</li>
+                    <li>Recorreção/Anulação de Questão de Simulado/Avaliação/Exame Final</li>
+                    <li>Reabertura de Prazo de Atividade</li>
+                    <!-- <li><a href="https://forms.office.com/pages/responsepage.aspx?id=6Oy8YGvrTkmmB-g_zc7zM2_ciw5EOc5KtC1xVaiXx5VUQ0lXWjBWUjRFSFE2T0ZOVVVSWk1TQlQ1Ry4u&amp;origin=lprLink+Please+fill+out+this+form+A+post+on+Microsoft+Forms+provided+by%3a+forms.office.com" target="_blank">Clique aqui para acessar o formulário</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Script para alternar a exibição dos conteúdos -->
+<script>
+    function toggleConteudo(id) {
+        var conteudo = document.getElementById(id);
+        if (conteudo.style.display === "none" || conteudo.style.display === "") {
+            conteudo.style.display = "block";
+        } else {
+            conteudo.style.display = "none";
+        }
+    }
+</script>
+
+<!-- Estilo adicional para ocultar inicialmente os conteúdos -->
+<style>
+    .conteudoOculto {
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .linkTexto {
+        cursor: pointer;
+        color: #007BFF;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .linkTexto:hover {
+        text-decoration: underline;
+        color: #0056b3;
+    }
+</style>
+
