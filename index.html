@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEAD | Solicitações</title>
-    
+
     <!-- Favicon (ícone na aba do navegador) -->
     <link rel="icon" href="icone-afya.png" type="image/x-icon">
-    
+
     <!-- Links para Google Fonts e ícones -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;display=swap&amp;subset=latin-ext">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
-    
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,20 +20,25 @@
             padding: 20px;
             margin: 0;
             background-image: url('fundo-site.jpg');
-            background-size: cover; 
-            background-repeat: no-repeat; 
-            background-attachment: fixed; 
-            background-position: center; 
-            color: #000000; /* Cor do texto para contraste */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #000000;
         }
 
-        h1, h2 {
-            color: #000000; /* Cor do título */
+        h1,
+        h2 {
+            color: #000000;
             margin-bottom: 30px;
         }
 
         p {
-            margin-bottom: 40px; /* Adicionando um espaço abaixo do parágrafo */
+            margin-bottom: 25px;
+        }
+        
+        .p_topo {
+            margin-bottom: 40px;
         }
 
         button {
@@ -47,7 +52,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px; /* Espaço entre o texto e o ícone */
+            gap: 8px;
             margin-bottom: 30px;
         }
 
@@ -55,16 +60,9 @@
             background-color: #0056b3;
         }
 
-        .icon {
-            width: 24px;
-            height: 24px;
-            vertical-align: middle;
-        }
-
-        /* Estilos para as 3 colunas */
         .coluna {
             flex: 1;
-            margin: 0 10px;
+            margin: 0 5px;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.5);
             border-radius: 8px;
@@ -73,6 +71,7 @@
 
         .coluna h3 {
             color: #007BFF;
+            margin-bottom: 10px;
         }
 
         .coluna ul {
@@ -82,13 +81,14 @@
 
         .coluna ul li {
             margin-bottom: 10px;
+            text-align: left;
         }
 
-        /* Estilos para a divisão em 2 partes */
         .container {
             display: flex;
             justify-content: space-between;
-            margin-top: 20px;
+            gap: 10px;
+            flex-wrap: wrap;
         }
 
         .informacoes {
@@ -97,10 +97,11 @@
             margin-top: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
 
         .txtRosaAfya {
-            color: #E81C6F;
+            color: #D63262;
             font-size: 20px;
             margin-bottom: 10px;
         }
@@ -118,7 +119,28 @@
         .botao a:hover {
             background-color: #0056b3;
         }
-        
+
+        .linkTexto {
+            display: block;
+            text-align: left;
+            cursor: pointer;
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .linkTexto:hover {
+            color: #0056b3;
+        }
+
+        .conteudoOculto {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 0px; <!-- bordinha da resposta-->
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -128,118 +150,112 @@
         <h2 class="nomeTopo" id="nomeTopo">Bem-vindo ao Canal de Solicitações</h2>
     </section>
     <h1>NEAD | Núcleo de Educação à Distância</h1>
-    <p>Prezado Acadêmico, atenção ao tipo de solicitação que deseja realizar. Clique no botão desejado para realizar sua solicitação.</p>
-    <p></p>
-    <p></p>
+    <p_topo>Prezado Acadêmico, atenção ao tipo de solicitação que deseja realizar. Clique no botão desejado para realizar sua solicitação.</p>
 
-    <!-- Primeira Parte: Divisão em 3 colunas -->
+    <!-- Divisão em 4 colunas -->
     <div class="container">
         <div class="coluna">
-            <button>Conteúdo</button>
+            <button>Solicitações Canvas</button>
             <ul>
-                <li><b>REVISÃO DE CONTEÚDO</b></li>
-                <li>Cursos EAD e Semi</li>
-                <li>Cursos Presenciais - ON.A/ON.S/HB-S/HB</li>
+                <p><b>Serviços</b></p>
+                <li>E-mail de redefinição de senha não chegou;</li>
+                <li>Não consigo texto texto texto</li>
             </ul>
         </div>
+
         <div class="coluna">
-            <button>Docente</button>
+        <a href="https://forms.office.com/r/uKvscCEb5A" target="_blank" style="text-decoration: none;">
+        <button style="align: center;" >Solicitações - Disciplinas Híbridas</button>
+        </a>
+        <ul>
+                <p><b>Tipos de solicitações</b></p>
+                <li>Revisão de Conteúdo</li>
+                <li>Revisão de Questões - SIMULADO</li>
+            </ul>
+        </div>
+
+
+        <div class="coluna">
+            <a href="https://forms.office.com/r/JjQabHEUdD" target="_blank" style="text-decoration: none;" >
+            <button>Solicitações - Revisão de Conteúdo</button>
+            </a>
             <ul>
+                <p><b>Disciplinas ON.A, ON.S e HB.S </b></p>
                 <li>Correção de Roteiro de Atividade</li>
-                <li>Reabertura de Prazo de Atividade ON.A/ON.S/HB-S - Cursos Presenciais</li>
-                <li>Recorreção/Anulação de Questão de Simulado/Avaliação/Exame ON.A-ON.S-HB-S - Cursos Presenciais</li>
+                <li>Recorreção/Anulação de questão de: Simulado/Avaliação/Exame</li>
             </ul>
         </div>
         <div class="coluna">
-            <button>Sistemas</button>
+            <a href="https://forms.office.com/r/sT6ShxciwT" target="_blank" style="text-decoration: none;" >
+            <button>Solicitações - Reabertura de Prazo</button>
+            </a>
             <ul>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeF2w2wUNwHYQoWzA5K29nkVNqs1hUkEsdxrFLlK0ryzEBTxg/viewform" target="_blank">Clique aqui</a> para solicitação de geração da Prova (2° Chamada)</li>
-                <li>Revisão de Questão</li>
-                <li>Recorreção/Anulação de Questão de Simulado/Avaliação/Exame Final</li>
-                <li>Reabertura de Prazo de Atividade</li>
+                <p><b>Reabertura de envio de avitivade diante</b></p>
+                <li>Roteiro 01</li>
+                <li>Roteiro 02</li>
+                <li>Simulado</li>
+                <p><i>Solicitações disponibilizadas conforme prazo previsto em calendário divulgado.</i></p>
             </ul>
         </div>
     </div>
 
+   
     <!-- Segunda Parte: Formulários e Links -->
-<section class="informacoes">
-    <h3 class="txtRosaAfya">Dúvidas Frequentes:</h3>
-    <div class="div" id="escolhaDiv">
-        <!-- Toggle para "Conteúdo" -->
-        <div class="botao" id="botao">
-            <span class="linkTexto" onclick="toggleConteudo('conteudoToggle')">Conteúdo</span>
-            <div id="conteudoToggle" class="conteudoOculto" style="text-align: left; padding-left: 15px;">
-                <ul>
-                    <li><b>REVISÃO DE CONTEÚDO</b></li>
-                    <li>Cursos EAD e Semi</li>
-                    <li>Cursos Presenciais - ON.A/ON.S/HB-S/HB</li>
-                    <!-- <li><a href="https://forms.office.com/pages/responsepage.aspx?id=6Oy8YGvrTkmmB-g_zc7zM2_ciw5EOc5KtC1xVaiXx5VUNEpWV0xUMUc3MjRJVzZZVDVWS1ZSRUE4Ri4u&amp;origin=lprLink+Please+fill+out+this+form+A+post+on+Microsoft+Forms+provided+by%3a+forms.office.com" target="_blank">Clique aqui para acessar o formulário</a></li>-->
-                </ul>
+    <section class="informacoes">
+        <h3 style="text-align: center;">Confira os Guias de Uso do Canvas Afya Student (<a href="#">Clique aqui</a>) e Do Aplicativo da Central do Aluno (<a href="#">Clique Aqui</a>)</h3>
+        <h3 class="txtRosaAfya">Dúvidas Frequentes:</h3>
+        <div class="div" id="escolhaDiv">
+            <!-- Toggle para "Conteúdo" -->
+            <div class="botao" id="botao">
+                <span class="linkTexto" onclick="toggleConteudo('conteudoToggle')">Não consigo redefinir minha senha</span>
+                <div id="conteudoToggle" class="conteudoOculto">
+                    <ul>
+                        <p>Use o recurso de troca de senha e aguarde o e-mail de Redefinição. Caso não chegue em 24 horas, por favor, use o botão "Solicitações Canvas" acima. </p>
+                        <!-- <li>Cursos EAD e Semi</li>
+                        <li>Cursos Presenciais - ON.A/ON.S/HB-S/HB</li> -->
+                    </ul>
+                </div>
             </div>
-        </div>
-        
-        <!-- Toggle para "Docente" -->
-        <div class="botao" id="botao">
-            <span class="linkTexto" onclick="toggleConteudo('docenteToggle')">Docente</span>
-            <div id="docenteToggle" class="conteudoOculto">
-                <ul>
-                    <li>Correção de Roteiro de Atividade</li>
-                    <li>Reabertura de Prazo de Atividade ON.A/ON.S/HB-S - Cursos Presenciais</li>
-                    <li>Recorreção/Anulação de Questão de Simulado/Avaliação/Exame ON.A-ON.S-HB-S - Cursos Presenciais</li>
-                    <!-- <li><a href="https://forms.office.com/pages/responsepage.aspx?id=6Oy8YGvrTkmmB-g_zc7zM2_ciw5EOc5KtC1xVaiXx5VURjU5NlZYSkZLWkdEMENORVUyWDIxUFYxSi4u&amp;origin=lprLink+Please+fill+out+this+form+A+post+on+Microsoft+Forms+provided+by%3a+forms.office.com" target="_blank">Clique aqui para acessar o formulário</a></li>-->
-                </ul>
-            </div>
-        </div>
-        
-        <!-- Toggle para "Sistemas" -->
-        <div class="botao" id="botao">
-            <span class="linkTexto" onclick="toggleConteudo('sistemasToggle')">Sistemas</span>
-            <div id="sistemasToggle" class="conteudoOculto">
-                <ul>
-                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeF2w2wUNwHYQoWzA5K29nkVNqs1hUkEsdxrFLlK0ryzEBTxg/viewform" target="_blank">Clique aqui</a> para solicitação de geração da Prova (2° Chamada)</li>
-                    <li>Revisão de Questão</li>
-                    <li>Recorreção/Anulação de Questão de Simulado/Avaliação/Exame Final</li>
-                    <li>Reabertura de Prazo de Atividade</li>
-                    <!-- <li><a href="https://forms.office.com/pages/responsepage.aspx?id=6Oy8YGvrTkmmB-g_zc7zM2_ciw5EOc5KtC1xVaiXx5VUQ0lXWjBWUjRFSFE2T0ZOVVVSWk1TQlQ1Ry4u&amp;origin=lprLink+Please+fill+out+this+form+A+post+on+Microsoft+Forms+provided+by%3a+forms.office.com" target="_blank">Clique aqui para acessar o formulário</a></li>-->
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Script para alternar a exibição dos conteúdos -->
-<script>
-    function toggleConteudo(id) {
-        var conteudo = document.getElementById(id);
-        if (conteudo.style.display === "none" || conteudo.style.display === "") {
-            conteudo.style.display = "block";
-        } else {
-            conteudo.style.display = "none";
+            <!-- Toggle para "Docente" -->
+            <div class="botao" id="botao">
+                <span class="linkTexto" onclick="toggleConteudo('docenteToggle')">Minhas disciplinas NÃO aparecem no Canvas</span>
+                <div id="docenteToggle" class="conteudoOculto">
+                    <ul>
+                        <p>Conferir sua Grade Curricular no Portal do Aluno. A disciplina deve estar com status de "MATRICULADO", caso não esteja, procurar a <b>Central do Aluno</b> para conferir possíveis pendências.</p>
+                        <p>Caso esteja com o status "MATRICULADO", por favor, aguardar 72 horas. Após esse período, use o botão "Solicitações Canvas" acima.</p>
+                        <!-- <li>Recorreção/Anulação de Questão de Simulado/Avaliação/Exame ON.A-ON.S-HB-S - Cursos Presenciais</li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Toggle para "Sistemas" -->
+            <div class="botao" id="botao">
+                <span class="linkTexto" onclick="toggleConteudo('sistemasToggle')">Não consigo configurar meu aplicativo Canvas para receber notificações</span>
+                <div id="sistemasToggle" class="conteudoOculto">
+                    <ul>
+                        <p>Na página 04 do Guia Canvas Afya para Estudante, seguindo o passo a passo, você consegue configurar o app mobile para receber notificações de: vencimento de tarefas, avisos, atividades novas e etc... As notificações também estão disponíveis para serem recebidas via e-mail. É importante lembrar que é de responsabilidade do aluno verificar seu Canvas constantemente.</p>
+                        <p> <b>Atenção ao Aplicativo!</b>
+Use somente para receber atualizações de tarefas, testes, fóruns, avisos e notificações via notificação no celular.
+Problemas no envio de atividades, tarefas, testes ou de qualquer outra natureza através do aplicativo é de inteira responsabilidade do aluno. Não prestamos apoio para o aplicativo mobile e nem nos responsabilizamos por erros que possam acontecer no app do seu celular. Funcionalidades podem não funcionar como esperadas comparados com a visualização do Canvas em um navegador web totalmente suportado.</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Função para alternar a visibilidade dos conteúdos
+        function toggleConteudo(id) {
+            const elemento = document.getElementById(id);
+            if (elemento.style.display === "none" || elemento.style.display === "") {
+                elemento.style.display = "block";
+            } else {
+                elemento.style.display = "none";
+            }
         }
-    }
-</script>
+    </script>
+</body>
 
-<!-- Estilo adicional para ocultar inicialmente os conteúdos -->
-<style>
-    .conteudoOculto {
-        display: none;
-        margin-top: 10px;
-        padding: 10px;
-        background-color: #f0f0f0;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .linkTexto {
-        cursor: pointer;
-        color: #007BFF;
-        font-weight: bold;
-        text-decoration: none;
-    }
-
-    .linkTexto:hover {
-        text-decoration: underline;
-        color: #0056b3;
-    }
-</style>
+</html>
 
